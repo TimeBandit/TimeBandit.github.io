@@ -70,7 +70,7 @@
 <ul>
 <li><code>git</code> brings up a list of all available commands.</li>
 <li><code>git init</code> initialises a new repository(repo). This allows you to clone it right away.</li>
-<li><code>git remote add ...</code> to communicate with the outside world, git uses what are called remotes. These are repositories other than the one on your local disk to which you can push your changes into (so that other people can see them) or pull from (so that you can get others changes). The command <code>git remote add origin git@github.com:peter/first_app.git</code> creates a new remote called origin located at <code>git@github.com:peter/first_app.git</code>. Once you do this, in your push commands, you can push to origin instead of typing out the whole URL.</li>
+<li><code>git remote add ...</code> to communicate with the outside world, git uses what are called remotes. These are repositories other than the one on your local disk to which you can push your changes into (so that other people can see them) or pull from (so that you can get others changes). The command <code>git remote add origin [HTTPS clone URL]</code> creates a new remote called origin located at <code>HTTPS clone URL</code>. Once you do this, in your push commands, you can push to origin instead of typing out the whole URL.</li>
 <li><code>git clone repo-url</code> to download a repo onto your machine.</li>
 <li><code>git status</code> to check the tracked status of files in a local repo. </li>
 <li><code>git add file-name</code> or <code>git add --all</code> to track new files locally before pushing them to Github.</li>
