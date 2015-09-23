@@ -65,15 +65,31 @@
     <h3><a href="https://timebandit.github.io/pages/codework.html">Codework</a></h3>
   </div>
   <div class="article_text">
-    <p>Tools &amp; Tips:</p>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/FIGlet">Figlet</a> for generating README ASCII artwork.</li>
-<li><a href="https://timebandit.github.io/github-workflow.html">Github Workflow</a></li>
-</ul>
-<p>Code Projects.</p>
+    <h5>Code Projects:</h5>
 <ul>
 <li><a href="https://timebandit.github.io/graphSub">A Javascript plugin for d3js. A resubale force directed graph with some useful features rolled in</a></li>
 </ul>
+<h5>Tools &amp; Tips:</h5>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/FIGlet">Figlet</a> - For generating README ASCII artwork.</li>
+<li><a href="https://timebandit.github.io/github-workflow.html">Github Workflow</a> - My github cheatsheet.</li>
+<li><a href="http://bit.ly/1LNVSrI">virtualenv</a> Useful for jumping straight to a project folder. The key command is <code>mkvirtualenv -a $(pwd) project-name</code> allowing you to type <code>workon project-name</code> from anywhere to jump straight to that folder. </li>
+</ul>
+<h5>Front End Workflow</h5>
+<blockquote>
+<p><a href="http://yeoman.io/">Yeoman</a>: Yeoman helps you to kickstart new projects, prescribing best practices and tools to help you stay productive. The Yeoman workflow comprises three types of tools for improving your productivity and satisfaction when building a web app: </p>
+</blockquote>
+<ol>
+<li>The scaffolding tool (yo)</li>
+<li>The build tool (<a href="http://gruntjs.com/">Grunt</a>, <a href="http://gulpjs.com/">Gulp</a>, etc)</li>
+<li>The package manager (like <a href="http://bower.io/">Bower</a> and <a href="https://www.npmjs.com/">npm</a>).</li>
+</ol>
+<p>The workflow is as follows:</p>
+<ol>
+<li><code>yo webapp</code> (create a new webapp)</li>
+<li><code>bower search</code>, <code>bower install</code> (handle dependencies)</li>
+<li><code>grunt serve</code> (preview), <code>grunt test</code> (test), <code>grunt</code> (build)</li>
+</ol>
   </div>
   <div class="article_meta">
     <p>Updated on: Wed 20 May 2015</p>
