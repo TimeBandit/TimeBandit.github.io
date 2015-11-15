@@ -66,60 +66,23 @@
   </div>
   <div class="article_text">
     <p>This is my personal Javascript Reference and Cookbook.</p>
-<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
-
-<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-
-<div id="accordion">
-  <section style="background:#EEEEEE; color:black; padding:2px 4px; cursor:pointer">Some Basics</section>
-  <div>
-    <p><code>&&</code> operator produces the value of its first operand if the first operand is falsy. Otherwise, it produces the value of its second operand.</p>
-    <p><code>||</code> can be used to fill in default values, e.g. <code>var status = flight.status || "unkown"</code></p>
-    <p></p>
-    <p></p>
-    <p></p>
-  </div>
-  <section style="background:#EEEEEE; color:black; padding:2px 4px; cursor:pointer">How to Create an Object</section>
-  <div>
-    <ul>
-      <li>
-        Object Literals
-        <script src="https://gist.github.com/TimeBandit/2ca03423bb426b05f5db.js"></script>
-      </li>
-      <li>
-        <a href="http://mzl.la/1iOxb2f">Object.create()</a>
-      </li>
-      <li>
-        <code>new</code>Keyword
-        <script src="https://gist.github.com/TimeBandit/67b9c779699b0985e7fa.js"></script>
-      </li>
-    </ul>
-  </div>
-  <section style="background:#EEEEEE; color:black; padding:2px 4px; cursor:pointer">Common Design Patterns</section>
-  <div>
-    <ul>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ul>
-  </div>
-  <section style="background:#EEEEEE; color:black; padding:2px 4px; cursor:pointer">Section 4</section>
-  <div>
-    <p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est. </p><p>Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
-  </div>
-</div>
-
-<p><script>
-  $(function() {
-    $( "#accordion" ).accordion({
-      collapsible: true,
-      heightStyle: "content",
-      active: false
-    });
-  });
-  </script>
-</body>
-</html></p>
+<p><a href="#basics">Basics</a>
+<a href="#creating_objects">Creating Objects</a>
+<a href="#design_patterns">Design Patterns</a></p>
+<p><a name="basics"></a>
+The <code>&amp;&amp;</code> operator produces the value of its first operand if the first operand 
+is falsy. Otherwise, it produces the value of its second operand.</p>
+<p>The <code>||</code> operator can be used to fill in default values, e.g. 
+<code>var status = flight.status || "unkown"</code></p>
+<hr />
+<p><a name="creating_objects"></a>
+Using Object Literals
+<script src="https://gist.github.com/TimeBandit/2ca03423bb426b05f5db.js"></script>
+Using Object.create() <a href="http://mzl.la/1iOxb2f">see</a>.
+Using the <code>new</code> keyword
+<script src="https://gist.github.com/TimeBandit/67b9c779699b0985e7fa.js"></script></p>
+<hr />
+<p><a name="design_patterns"></a></p>
   </div>
   <div class="article_meta">
     <p>Updated on: Wed 20 May 2015</p>
