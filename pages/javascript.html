@@ -73,19 +73,22 @@
 </ul>
 <p><a name="basics">Basics</a></p>
 <p><em>Keywords</em></p>
-<p>abstract  arguments   boolean   break   byte
-  case  catch   char  class<em>  const
-  continue  debugger  default   delete  do
-  double  else  enum</em>   eval  export<em>
-  extends</em>  false   final   finally   float
-  for   function  goto  if  implements
-  import<em>   in  instanceof  int   interface
-  let   long  native  new   null
-  package   private   protected   public  return
-  short   static  super</em>  switch  synchronized
-  this  throw   throws  transient   true
-  try   typeof  var   void  volatile
-  while   with  yield</p>
+<div class="highlight"><pre><span class="kr">abstract</span>  <span class="nx">arguments</span>   <span class="kr">boolean</span>   <span class="k">break</span>   <span class="kr">byte</span>
+<span class="k">case</span>  <span class="k">catch</span>   <span class="kr">char</span>  <span class="kr">class</span><span class="o">*</span>  <span class="kr">const</span>
+<span class="k">continue</span>  <span class="kr">debugger</span>  <span class="k">default</span>   <span class="k">delete</span>  <span class="k">do</span>
+<span class="kr">double</span>  <span class="k">else</span>  <span class="kr">enum</span><span class="o">*</span>   <span class="nb">eval</span>  <span class="kr">export</span><span class="o">*</span>
+<span class="kr">extends</span><span class="o">*</span>  <span class="kc">false</span>   <span class="kr">final</span>   <span class="k">finally</span>   <span class="kr">float</span>
+<span class="k">for</span>   <span class="kd">function</span>  <span class="kr">goto</span>  <span class="k">if</span>  <span class="kr">implements</span>
+<span class="kr">import</span><span class="o">*</span>   <span class="k">in</span>  <span class="k">instanceof</span>  <span class="kr">int</span>   <span class="kr">interface</span>
+<span class="kd">let</span>   <span class="kr">long</span>  <span class="kr">native</span>  <span class="k">new</span>   <span class="kc">null</span>
+<span class="kr">package</span>   <span class="kr">private</span>   <span class="kr">protected</span>   <span class="kr">public</span>  <span class="k">return</span>
+<span class="kr">short</span>   <span class="kr">static</span>  <span class="kr">super</span><span class="o">*</span>  <span class="k">switch</span>  <span class="kr">synchronized</span>
+<span class="k">this</span>  <span class="k">throw</span>   <span class="kr">throws</span>  <span class="kr">transient</span>   <span class="kc">true</span>
+<span class="k">try</span>   <span class="k">typeof</span>  <span class="kd">var</span>   <span class="k">void</span>  <span class="kr">volatile</span>
+<span class="k">while</span>   <span class="kd">with</span>  <span class="k">yield</span>
+</pre></div>
+
+
 <p>The <code>&amp;&amp;</code> operator produces the value of its first operand if the first operand 
 is falsy. Otherwise, it produces the value of its second operand.</p>
 <p>The <code>||</code> operator can be used to fill in default values, e.g. 
@@ -95,12 +98,15 @@ is falsy. Otherwise, it produces the value of its second operand.</p>
 another property <em>name</em> string from the <em>object</em> is assigned to the <em>variable</em>.
 It is usually necessary to test <code>object.hasOwnProperty(variable)</code> to determine
 whether the peopery name is truly a member of the object or was instead on the 
-prototype chain.
-  for (myvar in obj){
-    if (obj.hasOwnProperty(myvar){
-      ...
-    })
-  }</p>
+prototype chain.</p>
+<div class="highlight"><pre>for (myvar in obj){
+  if (obj.hasOwnProperty(myvar){
+    ...
+  })
+}
+</pre></div>
+
+
 <hr />
 <p><a name="creating_objects">Creating Objects</a>
 Using Object Literals
