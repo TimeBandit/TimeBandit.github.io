@@ -71,11 +71,36 @@
 <li><a href="#creating_objects">Creating Objects</a></li>
 <li><a href="#design_patterns">Design Patterns</a></li>
 </ul>
-<p><a name="basics">Basics</a>
-The <code>&amp;&amp;</code> operator produces the value of its first operand if the first operand 
+<p><a name="basics">Basics</a></p>
+<p><em>Keywords</em></p>
+<p>abstract  arguments   boolean   break   byte
+  case  catch   char  class<em>  const
+  continue  debugger  default   delete  do
+  double  else  enum</em>   eval  export<em>
+  extends</em>  false   final   finally   float
+  for   function  goto  if  implements
+  import<em>   in  instanceof  int   interface
+  let   long  native  new   null
+  package   private   protected   public  return
+  short   static  super</em>  switch  synchronized
+  this  throw   throws  transient   true
+  try   typeof  var   void  volatile
+  while   with  yield</p>
+<p>The <code>&amp;&amp;</code> operator produces the value of its first operand if the first operand 
 is falsy. Otherwise, it produces the value of its second operand.</p>
 <p>The <code>||</code> operator can be used to fill in default values, e.g. 
 <code>var status = flight.status || "unkown"</code></p>
+<p>The falsy values are <code>false</code>, <code>null</code>, <code>undefined</code>, <code>empty string</code>, <code>0</code>, <code>Nan</code></p>
+<p><code>for in</code> enumerates the property names/keys of an object. On each iteration,
+another property <em>name</em> string from the <em>object</em> is assigned to the <em>variable</em>.
+It is usually necessary to test <code>object.hasOwnProperty(variable)</code> to determine
+whether the peopery name is truly a member of the object or was instead on the 
+prototype chain.
+  for (myvar in obj){
+    if (obj.hasOwnProperty(myvar){
+      ...
+    })
+  }</p>
 <hr />
 <p><a name="creating_objects">Creating Objects</a>
 Using Object Literals
