@@ -99,14 +99,13 @@ another property <em>name</em> string from the <em>object</em> is assigned to th
 It is usually necessary to test <code>object.hasOwnProperty(variable)</code> to determine
 whether the peopery name is truly a member of the object or was instead on the 
 prototype chain.</p>
-<div class="highlight"><pre>for (myvar in obj){
+<p><code>
+for (myvar in obj){
   if (obj.hasOwnProperty(myvar){
     ...
   })
 }
-</pre></div>
-
-
+</code></p>
 <hr />
 <p><a name="creating_objects">Creating Objects</a>
 Using Object Literals
